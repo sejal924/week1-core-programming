@@ -20,7 +20,7 @@ public class UnitConverter {
         return meters *  metersToFeet;
     }
     
-	//method to convert meter to feet to meter 
+	//method to convert  feet to meter 
     public static double convertFeetToMeters(double feet) {
 		double feetToMeters = 0.3048;
         return feet * feetToMeters;

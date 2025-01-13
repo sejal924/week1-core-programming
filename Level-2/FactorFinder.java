@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class FactorFinder {
-    
+        
+        // Method to find factors
 	public static int[] findFactors(int number) {
         int count = 0;
         for (int i = 1; i <= number / 2; i++) {
@@ -20,7 +21,7 @@ public class FactorFinder {
         }
         return factors;
     }
-
+    // Method to calculate sum of factor
     public static int sumOfFactors(int[] factors) {
         int sum = 0;
         for (int i = 0; i < factors.length; i++) {
@@ -28,7 +29,7 @@ public class FactorFinder {
         }
         return sum;
     }
-
+    // Method to calculate product of factor
     public static int productOfFactors(int[] factors) {
         int product = 1;
         for (int i = 0; i < factors.length; i++) {
@@ -36,7 +37,7 @@ public class FactorFinder {
         }
         return product;
     }
-
+    // Method to calculate sum of square of factor
     public static int sumOfSquaresOfFactors(int[] factors) {
         int sumOfSquares = 0;
         for (int i = 0; i < factors.length; i++) {
@@ -51,7 +52,8 @@ public class FactorFinder {
         int number = scanner.nextInt();
 
         int[] factors = findFactors(number);
-
+        
+        //printing the factors , sum of factor , product of factor and sum of square of factor
         System.out.print("Factors of " + number + ": ");
         for (int i = 0; i < factors.length; i++) {
             System.out.print(factors[i] + " ");
